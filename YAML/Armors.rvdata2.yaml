@@ -1,0 +1,1591 @@
+---
+root:
+-
+- !ruby/object:RPG::Armor
+  description: Prenda muy ligera.
+  name: Ropa Casual
+  icon_index: 168
+  price: 100
+  note: ''
+  id: 1
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 1
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 3
+  atype_id: 1
+- !ruby/object:RPG::Armor
+  description: Hecha del mejor cuero.
+  name: Chaqueta de cuero
+  icon_index: 168
+  price: 300
+  note: ''
+  id: 2
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 5
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 3
+  atype_id: 1
+- !ruby/object:RPG::Armor
+  description: Ropa duradera que puede aguantar un intenso viaje.
+  name: Traje de Aventurero
+  icon_index: 168
+  price: 2000
+  note: ''
+  id: 3
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 10
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 3
+  atype_id: 1
+- !ruby/object:RPG::Armor
+  description: Chaleco de cuero endurecido
+  name: Cuero Duro
+  icon_index: 168
+  price: 5000
+  note: ''
+  id: 4
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 15
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 3
+  atype_id: 1
+- !ruby/object:RPG::Armor
+  description: Ropa hecha con acero reforzado.
+  name: Brigantina
+  icon_index: 168
+  price: 8000
+  note: ''
+  id: 5
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 20
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 3
+  atype_id: 1
+- !ruby/object:RPG::Armor
+  description: Pañuelo de tela que te protege la cabeza.
+  name: Pañuelo
+  icon_index: 162
+  price: 100
+  note: ''
+  id: 6
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 1
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 2
+  atype_id: 1
+- !ruby/object:RPG::Armor
+  description: Pañuelo de cuero que protege cabeza.
+  name: Pañuelo de Cuero
+  icon_index: 162
+  price: 500
+  note: ''
+  id: 7
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 3
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 2
+  atype_id: 1
+- !ruby/object:RPG::Armor
+  description: Sombrero hecho de piel.
+  name: Sombrero de Piel
+  icon_index: 162
+  price: 1500
+  note: ''
+  id: 8
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 6
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 2
+  atype_id: 1
+- !ruby/object:RPG::Armor
+  description: Paño grueso para envolverlo en la cabeza repetidamente.
+  name: Turbante
+  icon_index: 162
+  price: 4000
+  note: ''
+  id: 9
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 10
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 2
+  atype_id: 1
+- !ruby/object:RPG::Armor
+  description: Un elegante sombrero con plumas de muchos bellos pájaros.
+  name: Sombrero Emplumado
+  icon_index: 162
+  price: 6500
+  note: ''
+  id: 10
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 14
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 2
+  atype_id: 1
+- !ruby/object:RPG::Armor
+  description: Túnica hecha de grueso algodón.
+  name: Túnica de Algodón
+  icon_index: 171
+  price: 100
+  note: ''
+  id: 11
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 4
+  - 2
+  - 2
+  - 0
+  - 0
+  etype_id: 3
+  atype_id: 2
+- !ruby/object:RPG::Armor
+  description: Manto hecho de fina seda.
+  name: Manto de Seda
+  icon_index: 171
+  price: 500
+  note: ''
+  id: 12
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 9
+  - 3
+  - 4
+  - 0
+  - 0
+  etype_id: 3
+  atype_id: 2
+- !ruby/object:RPG::Armor
+  description: Túnica forrada gravada con runas.
+  name: Túnica Rúnica
+  icon_index: 171
+  price: 3000
+  note: ''
+  id: 13
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 13
+  - 6
+  - 7
+  - 0
+  - 0
+  etype_id: 3
+  atype_id: 2
+- !ruby/object:RPG::Armor
+  description: Túnica usada por un viejo sabio.
+  name: Túnica del Ermitaño
+  icon_index: 171
+  price: 8000
+  note: ''
+  id: 14
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 11
+    data_id: 3
+    value: 0.8
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 11
+    data_id: 4
+    value: 0.8
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 11
+    data_id: 5
+    value: 0.8
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 11
+    data_id: 6
+    value: 0.8
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 11
+    data_id: 7
+    value: 0.8
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 11
+    data_id: 8
+    value: 0.8
+  params:
+  - 0
+  - 0
+  - 0
+  - 18
+  - 11
+  - 12
+  - 0
+  - 0
+  etype_id: 3
+  atype_id: 2
+- !ruby/object:RPG::Armor
+  description: El poder del rey de los espíritus reside en este manto.
+  name: Manto Elemental
+  icon_index: 171
+  price: 13000
+  note: ''
+  id: 15
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 11
+    data_id: 3
+    value: 0.6
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 11
+    data_id: 4
+    value: 0.6
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 11
+    data_id: 5
+    value: 0.6
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 11
+    data_id: 6
+    value: 0.6
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 11
+    data_id: 7
+    value: 0.6
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 11
+    data_id: 8
+    value: 0.6
+  params:
+  - 0
+  - 0
+  - 0
+  - 25
+  - 17
+  - 18
+  - 0
+  - 0
+  etype_id: 3
+  atype_id: 2
+- !ruby/object:RPG::Armor
+  description: Adorno para la cabeza hecho de bronce.
+  name: Diadema de Bronce
+  icon_index: 166
+  price: 100
+  note: ''
+  id: 16
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 2
+  - 2
+  - 1
+  - 0
+  - 0
+  etype_id: 2
+  atype_id: 2
+- !ruby/object:RPG::Armor
+  description: Adorno para la cabeza hecho de Hierro.
+  name: Diadema de Hierro
+  icon_index: 166
+  price: 400
+  note: ''
+  id: 17
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 6
+  - 4
+  - 3
+  - 0
+  - 0
+  etype_id: 2
+  atype_id: 2
+- !ruby/object:RPG::Armor
+  description: Adorno para el pelo que mejora la magia.
+  name: Horquilla Plateada
+  icon_index: 166
+  price: 2500
+  note: ''
+  id: 18
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 10
+  - 5
+  - 4
+  - 0
+  - 0
+  etype_id: 2
+  atype_id: 2
+- !ruby/object:RPG::Armor
+  description: Adorno para la cabeza hecho de metal encantado.
+  name: Diadema de Mitrilo
+  icon_index: 166
+  price: 6000
+  note: ''
+  id: 19
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 15
+  - 7
+  - 6
+  - 0
+  - 0
+  etype_id: 2
+  atype_id: 2
+- !ruby/object:RPG::Armor
+  description: Contiene el poder una civilización ancestral.
+  name: Corona de los Magos
+  icon_index: 166
+  price: 10000
+  note: ''
+  id: 20
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 18
+  - 12
+  - 11
+  - 0
+  - 0
+  etype_id: 2
+  atype_id: 2
+- !ruby/object:RPG::Armor
+  description: Coraza hecha con placas de cuero.
+  name: Malla de Cuero
+  icon_index: 169
+  price: 100
+  note: ''
+  id: 21
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 5
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 3
+  atype_id: 3
+- !ruby/object:RPG::Armor
+  description: Coraza hecha de bronce.
+  name: Coraza de Bronce
+  icon_index: 169
+  price: 400
+  note: ''
+  id: 22
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 12
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 3
+  atype_id: 3
+- !ruby/object:RPG::Armor
+  description: Coraza hecha de hierro.
+  name: Coraza de Hierro
+  icon_index: 169
+  price: 2700
+  note: ''
+  id: 23
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 18
+  - 0
+  - 0
+  - -2
+  - 0
+  etype_id: 3
+  atype_id: 3
+- !ruby/object:RPG::Armor
+  description: Coraza hecha metal encantado.
+  name: Coraza de Mitrilo
+  icon_index: 169
+  price: 7000
+  note: ''
+  id: 24
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 24
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 3
+  atype_id: 3
+- !ruby/object:RPG::Armor
+  description: Coraza hecha de escamas de dragón.
+  name: Coraza del Dragón
+  icon_index: 169
+  price: 12000
+  note: ''
+  id: 25
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 11
+    data_id: 3
+    value: 0.8
+  params:
+  - 0
+  - 0
+  - 0
+  - 30
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 3
+  atype_id: 3
+- !ruby/object:RPG::Armor
+  description: Casco hecho de cuero.
+  name: Casco de Cuero
+  icon_index: 163
+  price: 100
+  note: ''
+  id: 26
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 4
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 2
+  atype_id: 3
+- !ruby/object:RPG::Armor
+  description: Casco reforzado hecho de bronce.
+  name: Casco de Bronce
+  icon_index: 163
+  price: 350
+  note: ''
+  id: 27
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 7
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 2
+  atype_id: 3
+- !ruby/object:RPG::Armor
+  description: Casco hecho de acero.
+  name: Casco de Acero
+  icon_index: 163
+  price: 2400
+  note: ''
+  id: 28
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 12
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 2
+  atype_id: 3
+- !ruby/object:RPG::Armor
+  description: Casco hecho con metal encantado.
+  name: Casco de Mitrilo
+  icon_index: 163
+  price: 5500
+  note: ''
+  id: 29
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 16
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 2
+  atype_id: 3
+- !ruby/object:RPG::Armor
+  description: Casco hecho con escamas de dragón.
+  name: Casco del Dragón
+  icon_index: 163
+  price: 9500
+  note: ''
+  id: 30
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 11
+    data_id: 3
+    value: 0.8
+  params:
+  - 0
+  - 0
+  - 0
+  - 22
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 2
+  atype_id: 3
+- !ruby/object:RPG::Armor
+  description: Armadura hecha con cadenas.
+  name: Cota de Malla
+  icon_index: 170
+  price: 100
+  note: ''
+  id: 31
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0.0
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 33
+    data_id: 0
+    value: -1.0
+  params:
+  - 0
+  - 0
+  - 0
+  - 8
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 3
+  atype_id: 4
+- !ruby/object:RPG::Armor
+  description: Armadura hecha de hierro.
+  name: Armadura de Hierro
+  icon_index: 170
+  price: 800
+  note: ''
+  id: 32
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: -0.01
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 33
+    data_id: 0
+    value: -2.0
+  params:
+  - 0
+  - 0
+  - 0
+  - 16
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 3
+  atype_id: 4
+- !ruby/object:RPG::Armor
+  description: Armadura usada por los caballeros.
+  name: Cota de Caballería
+  icon_index: 170
+  price: 3600
+  note: ''
+  id: 33
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: -0.02
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 33
+    data_id: 0
+    value: -3.0
+  params:
+  - 0
+  - 0
+  - 0
+  - 24
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 3
+  atype_id: 4
+- !ruby/object:RPG::Armor
+  description: Armadura hecha de metal encantado.
+  name: Cota de Mitrilo
+  icon_index: 170
+  price: 8000
+  note: ''
+  id: 34
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 32
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 3
+  atype_id: 4
+- !ruby/object:RPG::Armor
+  description: Armadura hecha con escamas de dragón.
+  name: Armadura del Dragón
+  icon_index: 170
+  price: 15000
+  note: ''
+  id: 35
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: -0.01
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 11
+    data_id: 3
+    value: 0.8
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 33
+    data_id: 0
+    value: -2.0
+  params:
+  - 0
+  - 0
+  - 0
+  - 40
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 3
+  atype_id: 4
+- !ruby/object:RPG::Armor
+  description: Yelmo hecho con cadenas de hierro.
+  name: Yelmo de Malla
+  icon_index: 164
+  price: 100
+  note: ''
+  id: 36
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0.0
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 33
+    data_id: 0
+    value: -1.0
+  params:
+  - 0
+  - 0
+  - 0
+  - 6
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 2
+  atype_id: 4
+- !ruby/object:RPG::Armor
+  description: Yelmo hecho de hierro.
+  name: Yelmo de Hierro
+  icon_index: 164
+  price: 600
+  note: ''
+  id: 37
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: -0.005
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 33
+    data_id: 0
+    value: -2.0
+  params:
+  - 0
+  - 0
+  - 0
+  - 12
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 2
+  atype_id: 4
+- !ruby/object:RPG::Armor
+  description: Usado por caballeros.
+  name: Yelmo de Caballería
+  icon_index: 164
+  price: 3000
+  note: ''
+  id: 38
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: -0.01
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 33
+    data_id: 0
+    value: -3.0
+  params:
+  - 0
+  - 0
+  - 0
+  - 18
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 2
+  atype_id: 4
+- !ruby/object:RPG::Armor
+  description: Yelmo hecho con metal encantado.
+  name: Yelmo de Mitrilo
+  icon_index: 164
+  price: 7000
+  note: ''
+  id: 39
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 24
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 2
+  atype_id: 4
+- !ruby/object:RPG::Armor
+  description: Yelmo hecho con escamas de dragón.
+  name: Yelmo del Dragón
+  icon_index: 164
+  price: 12000
+  note: ''
+  id: 40
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: -0.005
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 11
+    data_id: 3
+    value: 0.8
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 33
+    data_id: 0
+    value: -2.0
+  params:
+  - 0
+  - 0
+  - 0
+  - 30
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 2
+  atype_id: 4
+- !ruby/object:RPG::Armor
+  description: Escudo pequeño hecho para rechazar ataques.
+  name: Rodela
+  icon_index: 160
+  price: 100
+  note: ''
+  id: 41
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0.02
+  params:
+  - 0
+  - 0
+  - 0
+  - 1
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 1
+  atype_id: 5
+- !ruby/object:RPG::Armor
+  description: Escudo circular con estructura reforzada de metal.
+  name: Escudo Redondo
+  icon_index: 160
+  price: 300
+  note: ''
+  id: 42
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0.04
+  params:
+  - 0
+  - 0
+  - 0
+  - 3
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 1
+  atype_id: 5
+- !ruby/object:RPG::Armor
+  description: Escudo con pinchos en para el ataque.
+  name: Escudo de Pinchos
+  icon_index: 160
+  price: 1800
+  note: ''
+  id: 43
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0.06
+  params:
+  - 0
+  - 0
+  - 3
+  - 6
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 1
+  atype_id: 5
+- !ruby/object:RPG::Armor
+  description: Escudo hecho de metal encantado.
+  name: Rodela de Mitrilo
+  icon_index: 160
+  price: 4500
+  note: ''
+  id: 44
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0.08
+  params:
+  - 0
+  - 0
+  - 0
+  - 10
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 1
+  atype_id: 5
+- !ruby/object:RPG::Armor
+  description: Escudo hecho de escamas de dragón.
+  name: Rodela de Dragón
+  icon_index: 160
+  price: 7000
+  note: ''
+  id: 45
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0.125
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 11
+    data_id: 3
+    value: 0.8
+  params:
+  - 0
+  - 0
+  - 0
+  - 15
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 1
+  atype_id: 5
+- !ruby/object:RPG::Armor
+  description: Escudo hecho de madera dura.
+  name: Escudo de Madera
+  icon_index: 161
+  price: 100
+  note: ''
+  id: 46
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0.0
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 3
+    value: -0.2
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 33
+    data_id: 0
+    value: -1.0
+  params:
+  - 0
+  - 0
+  - 0
+  - 2
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 1
+  atype_id: 6
+- !ruby/object:RPG::Armor
+  description: Escudo hecho de hierro.
+  name: Escudo de Hierro
+  icon_index: 161
+  price: 700
+  note: ''
+  id: 47
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0.0
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 3
+    value: -0.2
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 33
+    data_id: 0
+    value: -2.0
+  params:
+  - 0
+  - 0
+  - 0
+  - 6
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 1
+  atype_id: 6
+- !ruby/object:RPG::Armor
+  description: Usado por caballeros.
+  name: Escudo de Caballería
+  icon_index: 161
+  price: 3400
+  note: ''
+  id: 48
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0.0
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 3
+    value: -0.2
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 33
+    data_id: 0
+    value: -3.0
+  params:
+  - 0
+  - 0
+  - 0
+  - 12
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 1
+  atype_id: 6
+- !ruby/object:RPG::Armor
+  description: Escudo hecho de metal encantado.
+  name: Escudo de Mitrilo
+  icon_index: 161
+  price: 7500
+  note: ''
+  id: 49
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 3
+    value: -0.2
+  params:
+  - 0
+  - 0
+  - 0
+  - 18
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 1
+  atype_id: 6
+- !ruby/object:RPG::Armor
+  description: Escudo hecho con escamas de dragón.
+  name: Escudo de Dragón
+  icon_index: 161
+  price: 13500
+  note: ''
+  id: 50
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0.0
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 3
+    value: -0.2
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 11
+    data_id: 3
+    value: 0.8
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 33
+    data_id: 0
+    value: -2.0
+  params:
+  - 0
+  - 0
+  - 0
+  - 24
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 1
+  atype_id: 6
+- !ruby/object:RPG::Armor
+  description: Cinturón de metal con el nombre del Dios de la Guerra grabado.
+  name: Cinturón del Dios de la Guerra
+  icon_index: 179
+  price: 3000
+  note: ''
+  id: 51
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 10
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 4
+  atype_id: 1
+- !ruby/object:RPG::Armor
+  description: Colgado en el boque mágico para la defensa.
+  name: Colgante de Defensa
+  icon_index: 179
+  price: 3000
+  note: ''
+  id: 52
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 10
+  - 0
+  - 10
+  - 0
+  - 0
+  etype_id: 4
+  atype_id: 1
+- !ruby/object:RPG::Armor
+  description: El espíritu sagrado del viento reside en estas botas.
+  name: Botas Aladas
+  icon_index: 179
+  price: 3000
+  note: ''
+  id: 53
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0.1
+  params:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 10
+  - 0
+  etype_id: 4
+  atype_id: 1
+- !ruby/object:RPG::Armor
+  description: El poder de la tierra proteje al portador.
+  name: Abrazo de la Tierra
+  icon_index: 179
+  price: 3000
+  note: ''
+  id: 54
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 13
+    data_id: 2
+    value: 0.8
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 13
+    data_id: 3
+    value: 0.8
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 13
+    data_id: 4
+    value: 0.8
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 13
+    data_id: 5
+    value: 0.8
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 13
+    data_id: 6
+    value: 0.8
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 13
+    data_id: 7
+    value: 0.8
+  params:
+  - 0
+  - 0
+  - 0
+  - 5
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 4
+  atype_id: 1
+- !ruby/object:RPG::Armor
+  description: Amuleto con el nombre de la Diosa de la Suerte grabado.
+  name: Amuleto de la Suerte
+  icon_index: 179
+  price: 5000
+  note: ''
+  id: 55
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  params:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 30
+  etype_id: 4
+  atype_id: 1
+- !ruby/object:RPG::Armor
+  description: Símbolo usado por aquellos que sirven a Dios.
+  name: Símbolo Sagrado
+  icon_index: 179
+  price: 5000
+  note: ''
+  id: 56
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 11
+    data_id: 3
+    value: 0.8
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 11
+    data_id: 4
+    value: 0.8
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 11
+    data_id: 5
+    value: 0.8
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 11
+    data_id: 6
+    value: 0.8
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 11
+    data_id: 7
+    value: 0.8
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 11
+    data_id: 8
+    value: 0.8
+  params:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 5
+  - 0
+  - 0
+  etype_id: 4
+  atype_id: 1
+- !ruby/object:RPG::Armor
+  description: Anillo con el secreto poder de un genio.
+  name: Anillo de Salomón
+  icon_index: 179
+  price: 5000
+  note: ''
+  id: 57
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 23
+    data_id: 4
+    value: 0.5
+  params:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 10
+  - 0
+  - 0
+  - 0
+  etype_id: 4
+  atype_id: 1
+- !ruby/object:RPG::Armor
+  description: Collar mágico que fortalece aquellos que luchan.
+  name: Collar de Odín
+  icon_index: 179
+  price: 5000
+  note: ''
+  id: 58
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 0
+    value: 0.1
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0.1
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 9
+    value: 0.04
+  params:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 4
+  atype_id: 1
+- !ruby/object:RPG::Armor
+  description: Parche usado por poderosos berserkers.
+  name: Parche del Berserker
+  icon_index: 179
+  price: 5000
+  note: ''
+  id: 59
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: -0.05
+  params:
+  - 0
+  - 0
+  - 15
+  - -5
+  - 0
+  - 0
+  - 0
+  - 0
+  etype_id: 4
+  atype_id: 1
+- !ruby/object:RPG::Armor
+  description: El rey de los dioses reside en este talismán.
+  name: Talismán de la Luz
+  icon_index: 179
+  price: 5000
+  note: ''
+  id: 60
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 0
+    value: 0.05
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 1
+    value: 0.05
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 7
+    value: 0.04
+  params:
+  - 0
+  - 0
+  - 5
+  - 5
+  - 5
+  - 5
+  - 5
+  - 5
+  etype_id: 4
+  atype_id: 1

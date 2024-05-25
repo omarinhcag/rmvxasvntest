@@ -1,0 +1,14 @@
+module RPG
+  class EquipItem < BaseItem
+    def initialize
+      super
+      @price = 0
+      @etype_id = 0
+      @params = [0] * 8
+    end
+    attr_accessor :price
+    attr_accessor :etype_id
+    attr_accessor :params
+  end
+end
+$PERMIT_CLASS.push RPG::EquipItem

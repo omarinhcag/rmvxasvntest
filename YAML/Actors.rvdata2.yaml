@@ -1,0 +1,215 @@
+---
+root:
+-
+- !ruby/object:RPG::Actor
+  name: Eric
+  face_index: 0
+  character_index: 0
+  initial_level: 1
+  face_name: Actor4
+  class_id: 1
+  character_name: Actor4
+  id: 1
+  features: []
+  note: ''
+  equips:
+  - 1
+  - 0
+  - 0
+  - 1
+  - 0
+  nickname: Muerte Plateada
+  description: "Un veterano guerrero que ha participado en muchas batallas.\r\nSe
+    vuelve incontrolable cuando entra en estado berserker."
+  max_level: 99
+- !ruby/object:RPG::Actor
+  name: Natalie
+  face_index: 1
+  character_index: 1
+  initial_level: 1
+  face_name: Actor4
+  class_id: 2
+  character_name: Actor4
+  id: 2
+  features: []
+  note: ''
+  equips:
+  - 7
+  - 0
+  - 0
+  - 1
+  - 0
+  nickname: Puño Relámpago
+  description: "Su padre es un gran asesino. A lo largo de su \r\njuventud ha aprendido
+    y dominado las artes marciales. "
+  max_level: 99
+- !ruby/object:RPG::Actor
+  name: Terence
+  face_index: 2
+  character_index: 2
+  initial_level: 1
+  face_name: Actor4
+  class_id: 3
+  character_name: Actor4
+  id: 3
+  features: []
+  note: ''
+  equips:
+  - 13
+  - 46
+  - 0
+  - 1
+  - 0
+  nickname: Caballero Errante
+  description: "Despojado de su posición. Deambula protegiendo a los \r\ndemás y siempre
+    se mantiene fiel a su código de honor."
+  max_level: 99
+- !ruby/object:RPG::Actor
+  name: Ernest
+  face_index: 4
+  character_index: 4
+  initial_level: 1
+  face_name: Actor4
+  class_id: 4
+  character_name: Actor4
+  id: 4
+  features: []
+  note: ''
+  equips:
+  - 19
+  - 46
+  - 0
+  - 1
+  - 0
+  nickname: Espadachín Mágico
+  description: "Un espadachín vagando en busca de su padre.\r\nDomina el arte de la
+    Espada Mágica."
+  max_level: 99
+- !ruby/object:RPG::Actor
+  name: Ryoma
+  face_index: 6
+  character_index: 6
+  initial_level: 1
+  face_name: Actor4
+  class_id: 5
+  character_name: Actor4
+  id: 5
+  features: []
+  note: ''
+  equips:
+  - 25
+  - 0
+  - 0
+  - 1
+  - 0
+  nickname: Espada al Amanecer
+  description: "El actual propietario de la espada de Takeshi. \r\nSus movimientos
+    son fluidos y afilados como un cuchillo."
+  max_level: 99
+- !ruby/object:RPG::Actor
+  name: Brenda
+  face_index: 1
+  character_index: 1
+  initial_level: 1
+  face_name: Actor5
+  class_id: 6
+  character_name: Actor5
+  id: 6
+  features: []
+  note: ''
+  equips:
+  - 31
+  - 0
+  - 0
+  - 1
+  - 0
+  nickname: Arquera Manos verdes
+  description: "Hija de los espíritus del bosque. Ama la naturaleza y \r\nprotege
+    el bosque de todo lo que pueda perturbar su hogar."
+  max_level: 99
+- !ruby/object:RPG::Actor
+  name: Rick
+  face_index: 2
+  character_index: 2
+  initial_level: 1
+  face_name: Actor5
+  class_id: 7
+  character_name: Actor5
+  id: 7
+  features: []
+  note: ''
+  equips:
+  - 37
+  - 37
+  - 0
+  - 1
+  - 0
+  nickname: Viento Invisible
+  description: "Su juventud está ligada al odio. \r\nActúa como un bromista debido
+    a su vida."
+  max_level: 99
+- !ruby/object:RPG::Actor
+  name: Alice
+  face_index: 5
+  character_index: 5
+  initial_level: 1
+  face_name: Actor5
+  class_id: 8
+  character_name: Actor5
+  id: 8
+  features: []
+  note: ''
+  equips:
+  - 43
+  - 0
+  - 0
+  - 1
+  - 0
+  nickname: Salvadora de Joan
+  description: "Mujer destinada a convertirse en una santa. Llena de \r\npasión y
+    da amor por igual al enemigo."
+  max_level: 99
+- !ruby/object:RPG::Actor
+  name: Isabelle
+  face_index: 7
+  character_index: 7
+  initial_level: 1
+  face_name: Actor5
+  class_id: 9
+  character_name: Actor5
+  id: 9
+  features: []
+  note: ''
+  equips:
+  - 49
+  - 0
+  - 0
+  - 1
+  - 0
+  nickname: Pesadilla Elegante
+  description: "Una bruja que inspiró miedo a la humanidad. A través\r\nde una reencarnación
+    fallida, ha perdido la memoria."
+  max_level: 99
+  icon_index: 0
+- !ruby/object:RPG::Actor
+  name: Noah
+  face_index: 6
+  character_index: 6
+  initial_level: 1
+  face_name: Actor5
+  class_id: 10
+  character_name: Actor5
+  id: 10
+  features: []
+  note: ''
+  equips:
+  - 49
+  - 0
+  - 0
+  - 1
+  - 0
+  nickname: Vidente de las Estrellas
+  description: "Un ermitaño que esquiva a la gente viviendo en las montañas.\r\nBusca
+    la verdadera identidad de la estrella malvada."
+  max_level: 99
+  icon_index: 0

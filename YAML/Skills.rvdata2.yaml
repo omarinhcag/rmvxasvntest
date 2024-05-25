@@ -1,0 +1,4167 @@
+---
+root:
+-
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño al enemigo.
+  name: Ataque
+  occasion: 1
+  icon_index: 116
+  message1: " ataca!"
+  scope: 1
+  animation_id: -1
+  note: 'Habilidad # 1 [ataque] se utiliza cuando se selecciona el comando.'
+  mp_cost: 0
+  speed: 0
+  id: 1
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 0
+    value1: 1.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: -1
+    formula: a.atk * 4 - b.def * 2
+    variance: 20
+    critical: true
+  success_rate: 100
+  hit_type: 1
+  stype_id: 0
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 5
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Protege el cuerpo, reduciendo el daño.
+  name: Defensa
+  occasion: 1
+  icon_index: 116
+  message1: " se defiende."
+  scope: 11
+  animation_id: 0
+  note: 'Habilidad # 2 [defensa] se utiliza cuando se selecciona el comando.'
+  mp_cost: 0
+  speed: 2000
+  id: 2
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 9
+    value1: 1.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 0
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 4
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Golpea al enemigo dos veces.
+  name: Ataque Contínuo
+  occasion: 1
+  icon_index: 116
+  message1: " usó Ataque Contínuo!"
+  scope: 1
+  animation_id: -1
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 3
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 0
+    value1: 1.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: -1
+    formula: a.atk * 4 - b.def * 2
+    variance: 20
+    critical: true
+  success_rate: 100
+  hit_type: 1
+  stype_id: 0
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 2
+  tp_gain: 3
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Ataca dos enemigos al azar.
+  name: Ataque Doble
+  occasion: 1
+  icon_index: 116
+  message1: " usó Ataque Doble!"
+  scope: 4
+  animation_id: -1
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 4
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 0
+    value1: 1.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: -1
+    formula: a.atk * 4 - b.def * 2
+    variance: 20
+    critical: true
+  success_rate: 100
+  hit_type: 1
+  stype_id: 0
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 3
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Ataca tres enemigos al azar.
+  name: Ataque Triple
+  occasion: 1
+  icon_index: 116
+  message1: " usó Ataque Triple!"
+  scope: 5
+  animation_id: -1
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 5
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 0
+    value1: 1.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: -1
+    formula: a.atk * 4 - b.def * 2
+    variance: 20
+    critical: true
+  success_rate: 100
+  hit_type: 1
+  stype_id: 0
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 2
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Acción enemiga. Enemigo escapa de la batalla.
+  name: Escape
+  occasion: 1
+  icon_index: 467
+  message1: " escapa."
+  scope: 11
+  animation_id: 0
+  note: 'Habilidad # 6 [Escapar] se utiliza cuando se selecciona el comando.'
+  mp_cost: 0
+  speed: 0
+  id: 6
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 41
+    data_id: 0
+    value1: 0.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 0
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Hacer nada.
+  name: Esperar
+  occasion: 1
+  icon_index: 6
+  message1: " espera."
+  scope: 0
+  animation_id: 0
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 7
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 0
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 4
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño de fuego a todos los enemigos.
+  name: Aliento de fuego
+  occasion: 1
+  icon_index: 96
+  message1: " usó Aliento de fuego!"
+  scope: 2
+  animation_id: 25
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 8
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 3
+    formula: a.atk
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño de hielo a todos los enemigos.
+  name: Aliento de Hielo
+  occasion: 1
+  icon_index: 97
+  message1: " usó Aliento de Hielo!"
+  scope: 2
+  animation_id: 26
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 9
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 4
+    formula: a.atk
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño de trueno a todos los enemigos.
+  name: Aliento Eléctrico
+  occasion: 1
+  icon_index: 98
+  message1: " usó Aliento Eléctrico!"
+  scope: 2
+  animation_id: 27
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 10
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 5
+    formula: a.atk
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Envenenar a todos los enemigos.
+  name: Niebla Tóxica
+  occasion: 1
+  icon_index: 2
+  message1: " usó Niebla Tóxica!"
+  scope: 2
+  animation_id: 31
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 11
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 2
+    value1: 0.5
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Cegar a todos los enemigos.
+  name: Niebla Oscura
+  occasion: 1
+  icon_index: 3
+  message1: " usó Niebla Oscura!"
+  scope: 2
+  animation_id: 51
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 12
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 3
+    value1: 0.5
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Silenciar a todos los enemigos.
+  name: Niebla del Silencio
+  occasion: 1
+  icon_index: 4
+  message1: " usó Niebla del Silencio!"
+  scope: 2
+  animation_id: 31
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 13
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 4
+    value1: 0.5
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Confundir a todos los enemigos.
+  name: Ultrasonido
+  occasion: 1
+  icon_index: 5
+  message1: " usó Ultrasonido!"
+  scope: 2
+  animation_id: 30
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 14
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 5
+    value1: 0.5
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Confundir a todos los enemigos.
+  name: Canción de Confusión
+  occasion: 1
+  icon_index: 5
+  message1: " canta Canción tentadora!"
+  scope: 2
+  animation_id: 32
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 15
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 5
+    value1: 0.5
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Dormir a todos los enemigos.
+  name: Adormecer
+  occasion: 1
+  icon_index: 6
+  message1: " usó Adormecer!"
+  scope: 2
+  animation_id: 54
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 16
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 6
+    value1: 0.5
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Dormir a todos los enemigos.
+  name: Polen Somnífero
+  occasion: 1
+  icon_index: 6
+  message1: " usó Polen Somnífero!"
+  scope: 2
+  animation_id: 29
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 17
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 6
+    value1: 0.5
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Paralizar a todos los enemigos.
+  name: Aliento Paralizante
+  occasion: 1
+  icon_index: 7
+  message1: " Usó Choque Paralizante!"
+  scope: 2
+  animation_id: 28
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 18
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 7
+    value1: 0.5
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Paralizar a un enemigo.
+  name: Mirada Paralizante
+  occasion: 1
+  icon_index: 7
+  message1: " usó Mirada Paralizante!"
+  scope: 1
+  animation_id: 55
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 19
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 7
+    value1: 0.5
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Aturdir a un enemigo.
+  name: Barrido de Pies
+  occasion: 1
+  icon_index: 8
+  message1: " usó Barrido de Pies!"
+  scope: 1
+  animation_id: 35
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 20
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 8
+    value1: 0.5
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 1
+  stype_id: 1
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño y aturdir a un enemigo.
+  name: Carga
+  occasion: 1
+  icon_index: 8
+  message1: " usó Carga!"
+  scope: 1
+  animation_id: 36
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 21
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 8
+    value1: 0.5
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 1
+    formula: a.atk * 4 - b.def * 2
+    variance: 20
+    critical: false
+  success_rate: 80
+  hit_type: 1
+  stype_id: 1
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Aturdir a todos los enemigos.
+  name: Rugido
+  occasion: 1
+  icon_index: 8
+  message1: " usó Rugido!"
+  scope: 2
+  animation_id: 34
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 22
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 8
+    value1: 0.5
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Absorbe PV del enemigo
+  name: Vampiro
+  occasion: 1
+  icon_index: 120
+  message1: " usó Vampiro!"
+  scope: 1
+  animation_id: 49
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 23
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 5
+    element_id: 2
+    formula: a.atk * 2 - b.def
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 1
+  stype_id: 1
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: El usuario recupera PV.
+  name: Meditar
+  occasion: 1
+  icon_index: 112
+  message1: " usó Meditar!"
+  scope: 11
+  animation_id: 39
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 24
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 3
+    element_id: 0
+    formula: b.mhp / 4
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: ''
+  name: "--------------------"
+  occasion: 0
+  icon_index: 0
+  message1: ''
+  scope: 1
+  animation_id: 0
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 25
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Restaura PV a un aliado.
+  name: Cura
+  occasion: 0
+  icon_index: 112
+  message1: " conjuró Cura!"
+  scope: 7
+  animation_id: 37
+  note: ''
+  mp_cost: 4
+  speed: 0
+  id: 26
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 3
+    element_id: 0
+    formula: 250 + a.mat
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Restaura PV a un aliado.
+  name: Cura II
+  occasion: 0
+  icon_index: 112
+  message1: " conjuró Cura II!"
+  scope: 7
+  animation_id: 37
+  note: ''
+  mp_cost: 8
+  speed: 0
+  id: 27
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 3
+    element_id: 0
+    formula: 1000 + a.mat * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Restaura PV a un aliado.
+  name: Cura III
+  occasion: 0
+  icon_index: 112
+  message1: "  conjuró Cura III!"
+  scope: 7
+  animation_id: 37
+  note: ''
+  mp_cost: 16
+  speed: 0
+  id: 28
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 3
+    element_id: 0
+    formula: 4000 + a.mat * 4
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Restaura PV a todos los aliados.
+  name: Sanación
+  occasion: 0
+  icon_index: 112
+  message1: " conjuró Sanación!"
+  scope: 8
+  animation_id: 37
+  note: ''
+  mp_cost: 12
+  speed: 0
+  id: 29
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 3
+    element_id: 0
+    formula: 250 + a.mat
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Restaura PV a todos los aliados.
+  name: Sanación II
+  occasion: 0
+  icon_index: 112
+  message1: " conjuró Sanación II!"
+  scope: 8
+  animation_id: 37
+  note: ''
+  mp_cost: 24
+  speed: 0
+  id: 30
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 3
+    element_id: 0
+    formula: 1000 + a.mat * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Cura veneno y parálisis.
+  name: Remedio
+  occasion: 0
+  icon_index: 112
+  message1: " conjuró Remedio!"
+  scope: 7
+  animation_id: 40
+  note: ''
+  mp_cost: 3
+  speed: 0
+  id: 31
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 22
+    data_id: 2
+    value1: 1.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 22
+    data_id: 7
+    value1: 1.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Cura la mayoria de los estados alterados.
+  name: Remedio II
+  occasion: 0
+  icon_index: 112
+  message1: " conjuró Remedio II!"
+  scope: 7
+  animation_id: 41
+  note: ''
+  mp_cost: 8
+  speed: 0
+  id: 32
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 22
+    data_id: 2
+    value1: 1.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 22
+    data_id: 3
+    value1: 1.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 22
+    data_id: 4
+    value1: 1.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 22
+    data_id: 5
+    value1: 1.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 22
+    data_id: 6
+    value1: 1.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 22
+    data_id: 7
+    value1: 1.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: "Resucita a un aliado.\r\n"
+  name: Resurrección
+  occasion: 0
+  icon_index: 112
+  message1: " conjuró Resurrección!"
+  scope: 9
+  animation_id: 42
+  note: ''
+  mp_cost: 15
+  speed: 0
+  id: 33
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 22
+    data_id: 1
+    value1: 1.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 3
+    element_id: 0
+    formula: b.mhp / 10
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Resucita a un aliado con la mitad de su PV.
+  name: Resurrección II
+  occasion: 0
+  icon_index: 112
+  message1: " conjuró Resurrección II!"
+  scope: 9
+  animation_id: 42
+  note: ''
+  mp_cost: 35
+  speed: 0
+  id: 34
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 22
+    data_id: 1
+    value1: 1.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 3
+    element_id: 0
+    formula: b.mhp / 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Envenena a todos los enemigos.
+  name: Envenenar
+  occasion: 1
+  icon_index: 2
+  message1: " usó Envenenar!"
+  scope: 2
+  animation_id: 50
+  note: ''
+  mp_cost: 2
+  speed: 0
+  id: 35
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 2
+    value1: 0.5
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Ciega a todos los enemigos.
+  name: Cegar
+  occasion: 1
+  icon_index: 3
+  message1: " usó Cegar!"
+  scope: 2
+  animation_id: 51
+  note: ''
+  mp_cost: 3
+  speed: 0
+  id: 36
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 3
+    value1: 0.5
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Silencia a todos los enemigos.
+  name: Silenciar
+  occasion: 1
+  icon_index: 4
+  message1: " usó Silenciar!"
+  scope: 2
+  animation_id: 52
+  note: ''
+  mp_cost: 4
+  speed: 0
+  id: 37
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 4
+    value1: 0.5
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Confunde a todos los enemigos.
+  name: Confundir
+  occasion: 1
+  icon_index: 5
+  message1: " usó Confundir!"
+  scope: 2
+  animation_id: 53
+  note: ''
+  mp_cost: 5
+  speed: 0
+  id: 38
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 5
+    value1: 0.5
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Duerme a todos los enemigos.
+  name: Dormir
+  occasion: 1
+  icon_index: 6
+  message1: " usó Dormir!"
+  scope: 2
+  animation_id: 54
+  note: ''
+  mp_cost: 6
+  speed: 0
+  id: 39
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 6
+    value1: 0.5
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Paraliza a todos los enemigos.
+  name: Paralizar
+  occasion: 1
+  icon_index: 7
+  message1: "  usó Paralizar!"
+  scope: 1
+  animation_id: 55
+  note: ''
+  mp_cost: 7
+  speed: 0
+  id: 40
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 7
+    value1: 0.5
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Aumenta el ataque de un aliado.
+  name: Fortalecer Ataque
+  occasion: 1
+  icon_index: 34
+  message1: " conjuró Fortalecer Ataque!"
+  scope: 7
+  animation_id: 43
+  note: ''
+  mp_cost: 9
+  speed: 0
+  id: 41
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 31
+    data_id: 2
+    value1: 5.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Aumenta la defensa de un aliado.
+  name: Fortalecer Defensa
+  occasion: 1
+  icon_index: 35
+  message1: " conjuró Fortalecer Defensa!"
+  scope: 7
+  animation_id: 43
+  note: ''
+  mp_cost: 8
+  speed: 0
+  id: 42
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 31
+    data_id: 3
+    value1: 5.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Aumenta la defensa mágica de un aliado.
+  name: Fortalecer Defensa Mágica
+  occasion: 1
+  icon_index: 37
+  message1: " conjuró Fortalecer Defensa Mágica!"
+  scope: 7
+  animation_id: 43
+  note: ''
+  mp_cost: 7
+  speed: 0
+  id: 43
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 31
+    data_id: 5
+    value1: 5.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Aumenta la agilidad de un aliado
+  name: Fortalecer Agilidad
+  occasion: 1
+  icon_index: 38
+  message1: " conjuró Fortalecer Agilidad!"
+  scope: 7
+  animation_id: 43
+  note: ''
+  mp_cost: 6
+  speed: 0
+  id: 44
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 31
+    data_id: 6
+    value1: 5.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Disminuye el ataque de todos los enemigos
+  name: Debilitar Ataque
+  occasion: 1
+  icon_index: 50
+  message1: " conjuró Debilitar Ataque!"
+  scope: 2
+  animation_id: 45
+  note: ''
+  mp_cost: 9
+  speed: 0
+  id: 45
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 32
+    data_id: 2
+    value1: 5.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Disminuye la defensa de los enemigos.
+  name: Debilitar Defensa
+  occasion: 1
+  icon_index: 51
+  message1: "  conjuró Debilitar Defensa!"
+  scope: 2
+  animation_id: 45
+  note: ''
+  mp_cost: 8
+  speed: 0
+  id: 46
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 32
+    data_id: 3
+    value1: 5.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Disminuye la defensa mágica de todos los enemigos.
+  name: Debilitar Defensa Mágica
+  occasion: 1
+  icon_index: 53
+  message1: " conjuró Debilitar Defensa Mágica!"
+  scope: 2
+  animation_id: 45
+  note: ''
+  mp_cost: 7
+  speed: 0
+  id: 47
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 32
+    data_id: 5
+    value1: 5.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Disminuye la agilidad de todos los enemigos.
+  name: Debilitar Agilidad
+  occasion: 1
+  icon_index: 54
+  message1: " conjuró Debilitar Agilidad!"
+  scope: 2
+  animation_id: 45
+  note: ''
+  mp_cost: 6
+  speed: 0
+  id: 48
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 32
+    data_id: 6
+    value1: 5.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Absorbe PV de un enemigo.
+  name: Drenar Vida
+  occasion: 1
+  icon_index: 120
+  message1: " Usó Gran Drenaje !"
+  scope: 1
+  animation_id: 49
+  note: ''
+  mp_cost: 10
+  speed: 0
+  id: 49
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 5
+    element_id: 2
+    formula: 200 + a.mat * 4 - b.mdf * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Absorbe PM de un enemigo.
+  name: Drenar Mana
+  occasion: 1
+  icon_index: 120
+  message1: " Usó Aspiración!"
+  scope: 1
+  animation_id: 49
+  note: ''
+  mp_cost: 10
+  speed: 0
+  id: 50
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 6
+    element_id: 2
+    formula: 20 + a.mat - b.mdf * 0.5
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño de fuego a un enemigo.
+  name: 'Fuego '
+  occasion: 1
+  icon_index: 96
+  message1: " conjuró Fuego !"
+  scope: 1
+  animation_id: 57
+  note: ''
+  mp_cost: 4
+  speed: 0
+  id: 51
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 3
+    formula: 150 + a.mat * 2 - b.mdf * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño de fuego a un enemigo.
+  name: Fuego II
+  occasion: 1
+  icon_index: 96
+  message1: " conjuró Fuego II!"
+  scope: 1
+  animation_id: 58
+  note: ''
+  mp_cost: 12
+  speed: -5
+  id: 52
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 3
+    formula: 400 + a.mat * 2 - b.mdf * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño de fuego a todos los enemigos.
+  name: Llamarada
+  occasion: 1
+  icon_index: 96
+  message1: " conjuró Llamarada!"
+  scope: 2
+  animation_id: 59
+  note: ''
+  mp_cost: 8
+  speed: -10
+  id: 53
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 3
+    formula: 150 + a.mat * 2 - b.mdf * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño de fuego a todos los enemigos.
+  name: Llamarada II
+  occasion: 1
+  icon_index: 96
+  message1: " conjuró Llamarada II!"
+  scope: 2
+  animation_id: 60
+  note: ''
+  mp_cost: 24
+  speed: -20
+  id: 54
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 3
+    formula: 400 + a.mat * 2 - b.mdf * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño de hielo a un enemigo.
+  name: Hielo
+  occasion: 1
+  icon_index: 97
+  message1: " conjuró Hielo!"
+  scope: 1
+  animation_id: 61
+  note: ''
+  mp_cost: 4
+  speed: 0
+  id: 55
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 4
+    formula: 150 + a.mat * 2 - b.mdf * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño de hielo a un enemigo.
+  name: Hielo II
+  occasion: 1
+  icon_index: 97
+  message1: " conjuró Hielo II!"
+  scope: 1
+  animation_id: 62
+  note: ''
+  mp_cost: 12
+  speed: -5
+  id: 56
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 4
+    formula: 400 + a.mat * 2 - b.mdf * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño de hielo a todos los enemigos.
+  name: 'Ventisca '
+  occasion: 1
+  icon_index: 97
+  message1: " conjuró Ventisca !"
+  scope: 2
+  animation_id: 63
+  note: ''
+  mp_cost: 8
+  speed: -10
+  id: 57
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 4
+    formula: 150 + a.mat * 2 - b.mdf * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño de hielo a todos los enemigos..
+  name: Ventisca II
+  occasion: 1
+  icon_index: 97
+  message1: " conjuró Ventisca II!"
+  scope: 2
+  animation_id: 64
+  note: ''
+  mp_cost: 24
+  speed: -20
+  id: 58
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 4
+    formula: 400 + a.mat * 2 - b.mdf * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño de trueno a un enemigo.
+  name: Trueno
+  occasion: 1
+  icon_index: 98
+  message1: " conjuró Trueno!"
+  scope: 1
+  animation_id: 65
+  note: ''
+  mp_cost: 5
+  speed: 0
+  id: 59
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 5
+    formula: 200 + a.mat * 2 - b.mdf * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño de trueno a un enemigo.
+  name: Trueno II
+  occasion: 1
+  icon_index: 98
+  message1: " conjuró Trueno II!"
+  scope: 1
+  animation_id: 66
+  note: ''
+  mp_cost: 15
+  speed: -5
+  id: 60
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 5
+    formula: 500 + a.mat * 2 - b.mdf * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño de trueno a todos los enemigos.
+  name: Tormenta
+  occasion: 1
+  icon_index: 98
+  message1: " conjuró Tormenta!"
+  scope: 2
+  animation_id: 67
+  note: ''
+  mp_cost: 10
+  speed: -10
+  id: 61
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 5
+    formula: 200 + a.mat * 2 - b.mdf * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño de trueno a todos los enemigos.
+  name: Tormenta II
+  occasion: 1
+  icon_index: 98
+  message1: " conjuró Tormenta II!"
+  scope: 2
+  animation_id: 68
+  note: ''
+  mp_cost: 30
+  speed: -20
+  id: 62
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 5
+    formula: 500 + a.mat * 2 - b.mdf * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño de agua a un enemigo.
+  name: Agua
+  occasion: 1
+  icon_index: 99
+  message1: " conjuró Agua!"
+  scope: 1
+  animation_id: 69
+  note: ''
+  mp_cost: 6
+  speed: -5
+  id: 63
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 6
+    formula: 300 + a.mat * 2 - b.mdf * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño de agua a todos los enemigos.
+  name: Oleada
+  occasion: 1
+  icon_index: 99
+  message1: " conjuró Oleada!"
+  scope: 2
+  animation_id: 70
+  note: ''
+  mp_cost: 18
+  speed: -15
+  id: 64
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 6
+    formula: 300 + a.mat * 2 - b.mdf * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño de tierra a un enemigo.
+  name: Piedra
+  occasion: 1
+  icon_index: 100
+  message1: " conjuró Piedra!"
+  scope: 1
+  animation_id: 71
+  note: ''
+  mp_cost: 6
+  speed: -5
+  id: 65
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 7
+    formula: 300 + a.mat * 2 - b.mdf * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño de tierra a todos los enemigos.
+  name: Terremoto
+  occasion: 1
+  icon_index: 100
+  message1: " conjuró Terremoto!"
+  scope: 2
+  animation_id: 72
+  note: ''
+  mp_cost: 18
+  speed: -15
+  id: 66
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 7
+    formula: 300 + a.mat * 2 - b.mdf * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño de viento a un enemigo.
+  name: Viento
+  occasion: 1
+  icon_index: 101
+  message1: " conjuró Viento!"
+  scope: 1
+  animation_id: 73
+  note: ''
+  mp_cost: 6
+  speed: -5
+  id: 67
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 8
+    formula: 300 + a.mat * 2 - b.mdf * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño de viento a todos los enemigos.
+  name: Tornado
+  occasion: 1
+  icon_index: 101
+  message1: " conjuró Tornado!"
+  scope: 2
+  animation_id: 74
+  note: ''
+  mp_cost: 18
+  speed: -15
+  id: 68
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 8
+    formula: 300 + a.mat * 2 - b.mdf * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño de luz a un enemigo.
+  name: Santo
+  occasion: 1
+  icon_index: 102
+  message1: " conjuró Santo!"
+  scope: 1
+  animation_id: 75
+  note: ''
+  mp_cost: 10
+  speed: -10
+  id: 69
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 9
+    formula: 400 + a.mat * 2 - b.mdf * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño de luz a todos los enemigos.
+  name: Sacramento
+  occasion: 1
+  icon_index: 102
+  message1: " conjuró Sacramento!"
+  scope: 2
+  animation_id: 76
+  note: ''
+  mp_cost: 40
+  speed: -30
+  id: 70
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 9
+    formula: 400 + a.mat * 2 - b.mdf * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño de oscuridad a un enemigo.
+  name: Sombra
+  occasion: 1
+  icon_index: 103
+  message1: " conjuró Sombra!"
+  scope: 1
+  animation_id: 77
+  note: ''
+  mp_cost: 10
+  speed: -10
+  id: 71
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 10
+    formula: 400 + a.mat * 2 - b.mdf * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño de oscuridad a todos los enemigos.
+  name: Oscuridad
+  occasion: 1
+  icon_index: 103
+  message1: " conjuró Oscuridad!"
+  scope: 2
+  animation_id: 78
+  note: ''
+  mp_cost: 40
+  speed: -30
+  id: 72
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 10
+    formula: 400 + a.mat * 2 - b.mdf * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño a un enemigo ignorando defensa.
+  name: Explosión
+  occasion: 1
+  icon_index: 119
+  message1: " conjuró Explosión!"
+  scope: 1
+  animation_id: 79
+  note: ''
+  mp_cost: 15
+  speed: -20
+  id: 73
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 0
+    formula: 300 + a.mat * 2
+    variance: 40
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño a todos los enemigos ignorando defensa.
+  name: Nuclear
+  occasion: 1
+  icon_index: 119
+  message1: " conjuró Nuclear!"
+  scope: 2
+  animation_id: 80
+  note: ''
+  mp_cost: 60
+  speed: -40
+  id: 74
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 0
+    formula: 300 + a.mat * 2
+    variance: 40
+    critical: false
+  success_rate: 100
+  hit_type: 2
+  stype_id: 2
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: ''
+  name: "--------------------"
+  occasion: 0
+  icon_index: 0
+  message1: ''
+  scope: 1
+  animation_id: 0
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 75
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Quema al usuario.
+  name: Arma de Fuego
+  occasion: 1
+  icon_index: 96
+  message1: " usó Arma de Fuego!"
+  scope: 11
+  animation_id: 43
+  note: ''
+  mp_cost: 25
+  speed: 0
+  id: 76
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 21
+    value1: 1.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Congela al usuario.
+  name: Arma de Hielo
+  occasion: 1
+  icon_index: 97
+  message1: " usó Arma de Hielo!"
+  scope: 11
+  animation_id: 43
+  note: ''
+  mp_cost: 25
+  speed: 0
+  id: 77
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 22
+    value1: 1.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Electrocuta al usuario.
+  name: Arma de Trueno
+  occasion: 1
+  icon_index: 98
+  message1: " usó Arma de Trueno!"
+  scope: 11
+  animation_id: 43
+  note: ''
+  mp_cost: 25
+  speed: 0
+  id: 78
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 23
+    value1: 1.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: ''
+  name: "--------------------"
+  occasion: 0
+  icon_index: 0
+  message1: ''
+  scope: 1
+  animation_id: 0
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 79
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 0
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Poderoso ataque contra un enemigo.
+  name: Ataque Poderoso
+  occasion: 1
+  icon_index: 116
+  message1: " usó Ataque Poderoso!"
+  scope: 1
+  animation_id: -1
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 80
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 0
+    value1: 1.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: -1
+    formula: a.atk * 5 - b.def * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 10
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Ataque contra todos los enemigos.
+  name: Ataque Onda
+  occasion: 1
+  icon_index: 116
+  message1: " usó Ataque Onda!"
+  scope: 2
+  animation_id: -1
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 81
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 0
+    value1: 1.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: -1
+    formula: a.atk * 2 - b.def * 2
+    variance: 25
+    critical: false
+  success_rate: 100
+  hit_type: 1
+  stype_id: 1
+  tp_cost: 10
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Aumenta el ataque del grupo durante 5 turnos.
+  name: Rugido Bestial
+  occasion: 1
+  icon_index: 34
+  message1: " usó Rugido Bestial!"
+  scope: 8
+  animation_id: 34
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 82
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 31
+    data_id: 2
+    value1: 5.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 25
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Habilidad de hacha. Ataque poderoso contra tres enemigos al azar.
+  name: Danza del Berserker
+  occasion: 1
+  icon_index: 128
+  message1: " usó Danza del Berserker!"
+  scope: 5
+  animation_id: -1
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 83
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: -1
+    formula: a.atk * 5 - b.def * 2
+    variance: 30
+    critical: false
+  success_rate: 100
+  hit_type: 1
+  stype_id: 1
+  tp_cost: 50
+  required_wtype_id1: 1
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Habilidad de hacha. Ataque poderoso contra todos los enemigos.
+  name: Masacre
+  occasion: 1
+  icon_index: 128
+  message1: " usó Masacre!"
+  scope: 2
+  animation_id: 12
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 84
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: -1
+    formula: a.atk * 12 - b.def * 6
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 1
+  stype_id: 1
+  tp_cost: 100
+  required_wtype_id1: 1
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: "Ataque con posibilidad de aturdir. \r\nDaño basado en el ataque y
+    defensa del usuario."
+  name: Placaje
+  occasion: 1
+  icon_index: 116
+  message1: " usó Placaje!"
+  scope: 1
+  animation_id: 36
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 85
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 8
+    value1: 0.3
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 1
+    formula: a.atk * 4 + a.def * 2 - b.def * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 1
+  stype_id: 1
+  tp_cost: 10
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Usuario cura todos sus estados alterados.
+  name: Chakra
+  occasion: 1
+  icon_index: 112
+  message1: " usó Chakra!"
+  scope: 11
+  animation_id: 38
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 86
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 22
+    data_id: 2
+    value1: 1.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 22
+    data_id: 3
+    value1: 1.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 22
+    data_id: 4
+    value1: 1.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 22
+    data_id: 5
+    value1: 1.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 22
+    data_id: 6
+    value1: 1.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 22
+    data_id: 7
+    value1: 1.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 10
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Contraataca y cancela ataques enemigos durante 3 turnos.
+  name: Pose del Tigre
+  occasion: 1
+  icon_index: 11
+  message1: " usó Pose del Tigre!"
+  scope: 11
+  animation_id: 43
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 87
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 18
+    value1: 1.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 25
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: "Daño a todos los enemigos ignorando defensa.\r\nHabilidad se activa
+    más rápido de lo normal."
+  name: Patada Sin Sombra
+  occasion: 1
+  icon_index: 116
+  message1: " usó Patada Sin Sombra!"
+  scope: 2
+  animation_id: 5
+  note: ''
+  mp_cost: 0
+  speed: 100
+  id: 88
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 0
+    formula: a.atk * 5
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 1
+  stype_id: 1
+  tp_cost: 50
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: "Habilidad de garra. Daña dos veces a un enemigo.\r\nIgnora defensa."
+  name: Garra del Dragón
+  occasion: 1
+  icon_index: 129
+  message1: " usó Garra del Dragón!"
+  scope: 1
+  animation_id: 86
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 89
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: -1
+    formula: a.atk * 12
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 1
+  stype_id: 1
+  tp_cost: 100
+  required_wtype_id1: 2
+  required_wtype_id2: 0
+  repeats: 2
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Proteje aliados con PV bajo durante 1 turno.
+  name: Protejer
+  occasion: 1
+  icon_index: 116
+  message1: " usó Protejer!"
+  scope: 11
+  animation_id: 0
+  note: ''
+  mp_cost: 0
+  speed: 2000
+  id: 90
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 11
+    value1: 1.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 10
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: "Usuario tiene más posibilidades de ser atacado\r\ndurante 5 turnos."
+  name: Provocar
+  occasion: 1
+  icon_index: 9
+  message1: " usó Provocar!"
+  scope: 11
+  animation_id: 34
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 91
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 12
+    value1: 1.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 10
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Disminuye drásticamente el daño sufrido durante 3 turnos.
+  name: Coraza
+  occasion: 1
+  icon_index: 113
+  message1: " usó Coraza!"
+  scope: 11
+  animation_id: 43
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 92
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 17
+    value1: 1.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 25
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Aumenta drásticamente la defensa del grupo durante 5 turnos.
+  name: Reforzar Defensa
+  occasion: 1
+  icon_index: 43
+  message1: " usó Reforzar Defensa!"
+  scope: 8
+  animation_id: 33
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 93
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 31
+    data_id: 3
+    value1: 5.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 31
+    data_id: 3
+    value1: 5.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 50
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Habilidad de lanza. Ataque poderoso a 3 enemigos al azar.
+  name: Tormenta Metal
+  occasion: 1
+  icon_index: 130
+  message1: " usó Tormenta Metal!"
+  scope: 5
+  animation_id: 90
+  note: ''
+  mp_cost: 0
+  speed: 1000
+  id: 94
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: -1
+    formula: a.atk * 5 - b.def * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 1
+  stype_id: 1
+  tp_cost: 100
+  required_wtype_id1: 3
+  required_wtype_id2: 0
+  repeats: 2
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: "Habilidad de espada. Enemigo atacado puede ser silenciado.\r\nDaño
+    basado en el ataque y ataque mágico del usuario."
+  name: Hoja Silenciosa
+  occasion: 1
+  icon_index: 131
+  message1: " usó Hoja Silenciosa!"
+  scope: 1
+  animation_id: -1
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 95
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 4
+    value1: 0.5
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: -1
+    formula: a.atk * 4 + a.mat * 3 - b.def - b.mdf
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 1
+  stype_id: 1
+  tp_cost: 10
+  required_wtype_id1: 4
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Cancela los fortalecimientos enemigos.
+  name: Disipar
+  occasion: 1
+  icon_index: 114
+  message1: " usó Disipar!"
+  scope: 1
+  animation_id: 46
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 96
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 33
+    data_id: 2
+    value1: 0.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 33
+    data_id: 3
+    value1: 0.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 33
+    data_id: 4
+    value1: 0.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 33
+    data_id: 5
+    value1: 0.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 33
+    data_id: 6
+    value1: 0.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 33
+    data_id: 7
+    value1: 0.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 10
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Aumenta drásticamente la defensa del grupo durante 3 turnos.
+  name: Barrera Mágica
+  occasion: 1
+  icon_index: 45
+  message1: " conjuró Barrera Mágica!"
+  scope: 11
+  animation_id: 44
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 97
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 31
+    data_id: 5
+    value1: 3.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 31
+    data_id: 5
+    value1: 3.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 25
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: "Da al usuario el poder del fuego, hielo y trueno \r\ndurante 5 turnos."
+  name: Tri-elemental
+  occasion: 1
+  icon_index: 113
+  message1: " conjuró Tri-elemental!"
+  scope: 11
+  animation_id: 44
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 98
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 21
+    value1: 1.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 22
+    value1: 1.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 23
+    value1: 1.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 50
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: "Habilidad de espada. Poderoso ataque mágico a todos los enemigos.\r\nDaño
+    basado en el ataque y ataque mágico del usuario."
+  name: Hoja Radiante
+  occasion: 1
+  icon_index: 131
+  message1: " usó Hoja Radiante!"
+  scope: 2
+  animation_id: 87
+  note: ''
+  mp_cost: 0
+  speed: 1000
+  id: 99
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 9
+    formula: a.atk * 5 + a.mat * 5 - b.def - b.mdf
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 1
+  stype_id: 1
+  tp_cost: 100
+  required_wtype_id1: 4
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Daño a un enemigo ignorando defensa.
+  name: Penetración
+  occasion: 1
+  icon_index: 116
+  message1: " usó Penetración!"
+  scope: 1
+  animation_id: -1
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 100
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: -1
+    formula: a.atk * 4
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 1
+  stype_id: 1
+  tp_cost: 10
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Aumenta 30% del PH del usuario.
+  name: Respiración de Batalla
+  occasion: 1
+  icon_index: 112
+  message1: " usó Respiración de Batalla!"
+  scope: 11
+  animation_id: 0
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 101
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 13
+    data_id: 0
+    value1: 30.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 10
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Aumenta el ataque y defensa del usuario durante 5 turnos.
+  name: Valentía
+  occasion: 1
+  icon_index: 113
+  message1: " usó Valentía!"
+  scope: 11
+  animation_id: 43
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 102
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 31
+    data_id: 2
+    value1: 5.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 31
+    data_id: 3
+    value1: 5.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 25
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Habilidad de katana. Ataque contra todos los enemigos.
+  name: Orgullo
+  occasion: 1
+  icon_index: 132
+  message1: " usó Orgullo!"
+  scope: 2
+  animation_id: -1
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 103
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: -1
+    formula: a.atk * 3 - b.def * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 1
+  stype_id: 1
+  tp_cost: 50
+  required_wtype_id1: 5
+  required_wtype_id2: 0
+  repeats: 2
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Habilidad de Katana. Ataca todos los enemigos 4 veces.
+  name: Hoja Invisible
+  occasion: 1
+  icon_index: 132
+  message1: " usó Hoja Invisible!"
+  scope: 2
+  animation_id: 88
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 104
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: -1
+    formula: a.atk * 4 - b.def * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 1
+  stype_id: 1
+  tp_cost: 100
+  required_wtype_id1: 5
+  required_wtype_id2: 0
+  repeats: 4
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Ataca a enemigo y disminuye su ataque durante 3 turnos.
+  name: Romper Arma
+  occasion: 1
+  icon_index: 116
+  message1: " usó Romper Arma!"
+  scope: 1
+  animation_id: -1
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 105
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 32
+    data_id: 2
+    value1: 3.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: -1
+    formula: a.atk * 4 - b.def * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 10
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Ataca a enemigo y disminuye su defensa durante 3 turnos.
+  name: Romper Armadura
+  occasion: 1
+  icon_index: 116
+  message1: " usó Romper Armadura!"
+  scope: 1
+  animation_id: -1
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 106
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 32
+    data_id: 3
+    value1: 3.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: -1
+    formula: a.atk * 4 - b.def * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 10
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Aumenta drásticamente la agilidad del usuario durante 5 turnos.
+  name: Sin Sombra
+  occasion: 1
+  icon_index: 46
+  message1: " usó Sin Sombra!"
+  scope: 11
+  animation_id: 31
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 107
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 31
+    data_id: 6
+    value1: 5.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 31
+    data_id: 6
+    value1: 5.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 25
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: "Habilidad de arco. Poderoso ataque contra tres enemigos al azar.\r\nDaño
+    basado en el ataque y agilidad del usuario."
+  name: Disparo Triple
+  occasion: 1
+  icon_index: 133
+  message1: " usó Disparo Triple!"
+  scope: 5
+  animation_id: -1
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 108
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: -1
+    formula: a.atk * 4 + a.agi * 2 - b.def * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 1
+  stype_id: 1
+  tp_cost: 50
+  required_wtype_id1: 6
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: "Habilidad de arco. Poderoso ataque contra todos los enemigos 3 veces.\r\nDaño
+    basado en el ataque y agilidad del usuario."
+  name: Mil Flechas
+  occasion: 1
+  icon_index: 133
+  message1: " usó Mil Flechas!"
+  scope: 2
+  animation_id: -1
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 109
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: -1
+    formula: a.atk * 3 + a.agi * 2 - b.def * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 1
+  stype_id: 1
+  tp_cost: 100
+  required_wtype_id1: 6
+  required_wtype_id2: 0
+  repeats: 3
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: "Usuario tiene menos posibilidades de ser atacado\r\ndurante 5 turnos."
+  name: Desvanecerse
+  occasion: 1
+  icon_index: 12
+  message1: " usó Desvanecerse!"
+  scope: 11
+  animation_id: 0
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 110
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 13
+    value1: 1.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 10
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Ciega a todos los enemigos.
+  name: Destello Cegador
+  occasion: 1
+  icon_index: 3
+  message1: " usó Destello Cegador!"
+  scope: 2
+  animation_id: 33
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 111
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 3
+    value1: 0.5
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 10
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Aumenta drasticamente la agilidad del usuario durante 8 turnos.
+  name: Suerte del Ladrón
+  occasion: 1
+  icon_index: 47
+  message1: " usó Suerte del Ladrón!"
+  scope: 11
+  animation_id: 43
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 112
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 31
+    data_id: 7
+    value1: 8.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 31
+    data_id: 7
+    value1: 8.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 25
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: "Habilidad de daga. Poderoso ataque a un enemigo dos veces.\r\nDaño
+    basado en el ataque y suerte del usuario."
+  name: Hoja del Asesino
+  occasion: 1
+  icon_index: 134
+  message1: " usó Hoja del Asesino!"
+  scope: 1
+  animation_id: -1
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 113
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: -1
+    formula: a.atk * 3 + a.luk * 4 - b.def * 2
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 1
+  stype_id: 1
+  tp_cost: 50
+  required_wtype_id1: 7
+  required_wtype_id2: 0
+  repeats: 2
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: "Habilidad de daga. Poderoso ataque a 4 enemigos al azar.\r\nDaño basado
+    en el ataque y suerte del usuario."
+  name: Danza Mortal
+  occasion: 1
+  icon_index: 134
+  message1: " usó Danza Mortal!"
+  scope: 6
+  animation_id: 89
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 114
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: -1
+    formula: a.atk * 2 + a.luk * 4 - b.def * 2
+    variance: 50
+    critical: false
+  success_rate: 100
+  hit_type: 1
+  stype_id: 1
+  tp_cost: 100
+  required_wtype_id1: 7
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Aumenta la defensa del grupo durante 3 turnos.
+  name: Bendición
+  occasion: 1
+  icon_index: 35
+  message1: " usó Bendición!"
+  scope: 8
+  animation_id: 44
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 115
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 31
+    data_id: 3
+    value1: 3.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 10
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Regenera el PV del grupo durante 4 turnos.
+  name: Aliento de las Hadas
+  occasion: 1
+  icon_index: 10
+  message1: " conjuró Aliento de las Hadas!"
+  scope: 8
+  animation_id: 42
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 116
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 14
+    value1: 1.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 25
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Ataque divino contra todos los enemigos.
+  name: Ira de Dios
+  occasion: 1
+  icon_index: 102
+  message1: " conjuró Ira de Dios!"
+  scope: 2
+  animation_id: 76
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 117
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 1
+    element_id: 9
+    formula: a.mat * 5 - b.mdf
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 50
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: "Aumenta drásticamente la defensa y defensa mágica \r\ndel grupo durante
+    7 turnos."
+  name: Abrazo de la Diosa
+  occasion: 1
+  icon_index: 113
+  message1: " conjuró Abrazo de la Diosa!"
+  scope: 8
+  animation_id: 44
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 118
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 31
+    data_id: 3
+    value1: 7.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 31
+    data_id: 3
+    value1: 7.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 31
+    data_id: 5
+    value1: 7.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 31
+    data_id: 5
+    value1: 7.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 100
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Refleja magia enemiga durante 1 turnos.
+  name: Espejo Mágico
+  occasion: 1
+  icon_index: 15
+  message1: " conjuró Espejo Mágico!"
+  scope: 11
+  animation_id: 0
+  note: ''
+  mp_cost: 0
+  speed: 2000
+  id: 119
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 20
+    value1: 1.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 10
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: "Aumenta drásticamente el ataque mágico del usuario\r\ndurante 5 turnos."
+  name: Refuerzo Mágico
+  occasion: 1
+  icon_index: 44
+  message1: " conjuró Refuerzo Mágico!"
+  scope: 11
+  animation_id: 43
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 120
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 31
+    data_id: 4
+    value1: 5.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 31
+    data_id: 4
+    value1: 5.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 25
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: "Duerme a todos los enemigos y disminuye drásticamente \r\nsu defensa
+    y defensa mágica."
+  name: Pesadilla
+  occasion: 1
+  icon_index: 6
+  message1: " conjuró Pesadilla!"
+  scope: 2
+  animation_id: 56
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 121
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 6
+    value1: 1.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 32
+    data_id: 5
+    value1: 5.0
+    value2: 0.0
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 32
+    data_id: 5
+    value1: 5.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 50
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Recupera 50% del PM máximo del usuario.
+  name: Torrente Mágico
+  occasion: 1
+  icon_index: 14
+  message1: " conjuró Torrente Mágico!"
+  scope: 11
+  animation_id: 38
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 122
+  features: []
+  effects: []
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 4
+    element_id: 0
+    formula: b.mmp * 0.5
+    variance: 0
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 100
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Regenera PM durante 4 turnos.
+  name: Pulso Mágico
+  occasion: 1
+  icon_index: 10
+  message1: " conjuró Pulso Mágico!"
+  scope: 11
+  animation_id: 38
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 123
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 15
+    value1: 1.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 10
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: "Usuario evade todos los ataques mágicos durante\r\n3 turnos."
+  name: Resistencia Mágica
+  occasion: 1
+  icon_index: 13
+  message1: " conjuró Resistencia Mágica!"
+  scope: 11
+  animation_id: 43
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 124
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 19
+    value1: 1.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 25
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Grupo es inmune a estados alterados durante 5 turnos.
+  name: Inmunidad
+  occasion: 1
+  icon_index: 113
+  message1: " conjuró Inmunidad!"
+  scope: 8
+  animation_id: 44
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 125
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 24
+    value1: 1.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 50
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
+- !ruby/object:RPG::Skill
+  message2: ''
+  description: Reduce el costo de PM del usuario durante 5 turnos.
+  name: Arcano
+  occasion: 1
+  icon_index: 14
+  message1: " conjuró Arcano!"
+  scope: 11
+  animation_id: 43
+  note: ''
+  mp_cost: 0
+  speed: 0
+  id: 126
+  features: []
+  effects:
+  - !ruby/object:RPG::UsableItem::Effect
+    code: 21
+    data_id: 25
+    value1: 1.0
+    value2: 0.0
+  damage: !ruby/object:RPG::UsableItem::Damage
+    type: 0
+    element_id: 0
+    formula: '0'
+    variance: 20
+    critical: false
+  success_rate: 100
+  hit_type: 0
+  stype_id: 1
+  tp_cost: 100
+  required_wtype_id1: 0
+  required_wtype_id2: 0
+  repeats: 1
+  tp_gain: 0
