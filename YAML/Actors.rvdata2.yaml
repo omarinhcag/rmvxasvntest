@@ -2,25 +2,28 @@
 root:
 -
 - !ruby/object:RPG::Actor
-  name: Eric
-  face_index: 0
-  character_index: 0
-  initial_level: 1
-  face_name: Actor4
-  class_id: 1
-  character_name: Actor4
+  name: Kari
+  face_index: 7
+  character_index: 7
+  initial_level: 2
+  face_name: Actor3
+  class_id: 2
+  character_name: Actor3
   id: 1
-  features: []
+  features:
+  - !ruby/object:RPG::BaseItem::Feature
+    code: 55
+    data_id: 1
+    value: 0.0
   note: ''
   equips:
-  - 1
+  - 7
   - 0
   - 0
   - 1
   - 0
-  nickname: Muerte Plateada
-  description: "Un veterano guerrero que ha participado en muchas batallas.\r\nSe
-    vuelve incontrolable cuando entra en estado berserker."
+  nickname: Hikari's Daughter lol
+  description: Another description
   max_level: 99
 - !ruby/object:RPG::Actor
   name: Natalie
@@ -192,7 +195,7 @@ root:
   max_level: 99
   icon_index: 0
 - !ruby/object:RPG::Actor
-  name: Noah
+  name: Minuette
   face_index: 6
   character_index: 6
   initial_level: 1
@@ -200,6 +203,27 @@ root:
   class_id: 10
   character_name: Actor5
   id: 10
+  features: []
+  note: ''
+  equips:
+  - 0
+  - 0
+  - 0
+  - 1
+  - 0
+  nickname: Minuet's thing
+  description: 'yes'
+  max_level: 99
+  icon_index: 0
+- !ruby/object:RPG::Actor
+  name: Noah
+  face_index: 6
+  character_index: 6
+  initial_level: 1
+  face_name: Actor5
+  class_id: 10
+  character_name: Actor5
+  id: 11
   features: []
   note: ''
   equips:

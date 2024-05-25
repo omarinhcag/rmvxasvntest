@@ -256,7 +256,7 @@ root: !ruby/object:RPG::System
     name: Battle1
     volume: 100
     pitch: 100
-  version_id: 18559444
+  version_id: 25973100
   start_map_id: 1
   battler_name: Skeleton
   magic_number: 77696160
